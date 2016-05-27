@@ -18,3 +18,8 @@ alias ..='cd ..'
 alias ls='ls -vG'
 alias ll='ls -alvG' 
 alias tree='tree -Csuh'
+
+typeset -U path
+
+export GOPATH=~/workspace/go
+path=($GOPATH/bin $path)
