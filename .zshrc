@@ -22,4 +22,4 @@ alias tree='tree -Csuh'
 typeset -U path
 
 export GOPATH=~/workspace/go
-path=($GOPATH/bin $path)
+path=($path $GOPATH/bin)
