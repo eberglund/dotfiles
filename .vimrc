@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'fatih/vim-go'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -30,3 +31,7 @@ syntax enable
 set hidden
 set history=100
 set number
+
+" CtrlP Config
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
