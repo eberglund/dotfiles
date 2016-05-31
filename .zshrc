@@ -1,4 +1,4 @@
-source ~/dotfiles/antigen.zsh
+source ~/dotfiles/antigen/antigen.zsh
 
 antigen bundle robbyrussell/oh-my-zsh lib/
 
