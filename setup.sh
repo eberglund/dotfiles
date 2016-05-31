@@ -1,4 +1,7 @@
 #!/bin/bash
-ln -s ~/dotfiles/terminator ~/.config/terminator
-ln -s ~/dotfiles/.zshrc ~/.zshrc
-ln -s ~/dotfiles/.vimrc ~/.vimrc
+
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+ln -s ${BASEDIR}/terminator ~/.config/terminator
+ln -s ${BASEDIR}/.zshrc ~/.zshrc
+ln -s ${BASEDIR}/.vimrc ~/.vimrc
