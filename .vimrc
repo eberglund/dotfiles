@@ -37,6 +37,14 @@ set fileformat=unix
 set encoding=utf-8
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
+nnoremap ; :
+
+" Make switching between windows easier
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 " CtrlP Config
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
