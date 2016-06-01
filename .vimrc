@@ -32,6 +32,10 @@ syntax enable
 set hidden
 set history=100
 set number
+set ruler
+set fileformat=unix
+set encoding=utf-8
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 " CtrlP Config
 let g:ctrlp_map = '<c-p>'
