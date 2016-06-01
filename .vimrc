@@ -1,3 +1,9 @@
+" -----------------------------------------------------------------------------
+"
+" Plugin config
+"
+" -----------------------------------------------------------------------------
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -26,7 +32,12 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+
+" -----------------------------------------------------------------------------
+"
+" Personal config
+"
+" -----------------------------------------------------------------------------
 
 syntax enable
 set hidden
