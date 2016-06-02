@@ -15,11 +15,14 @@ alias mv='mv -iv'
 alias mkdir='mkdir -v'
 
 alias ..='cd ..'
-alias ls='ls -vG'
-alias ll='ls -alvG' 
+alias ls='ls -vG --color'
+alias ll='ls -alvG --color' 
 alias tree='tree -Csuh'
 
 typeset -U path
 
 export GOPATH=~/workspace/go
 path=($path $GOPATH/bin)
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
