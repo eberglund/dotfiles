@@ -46,7 +46,13 @@ set number
 set ruler
 set fileformat=unix
 set encoding=utf-8
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set nobackup noswapfile nowritebackup
+set autoread
+set relativenumber
+
+" Use tabs, 1 tab = 4 spaces
+set tabstop=4 softtabstop=0 shiftwidth=4 smarttab
+set autoindent smartindent
 
 nnoremap ; :
 
