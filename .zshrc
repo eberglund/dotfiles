@@ -19,6 +19,8 @@ alias ls='ls -vG --color'
 alias ll='ls -alvG --color' 
 alias tree='tree -Csuh'
 
+alias sudo='sudo -E'
+
 typeset -U path
 
 export GOPATH=~/workspace/go
