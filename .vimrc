@@ -56,6 +56,9 @@ set autoindent smartindent
 
 nnoremap ; :
 
+" Use w!! for sudo save after opening
+cmap w!! w !sudo tee % >/dev/null
+
 " Make switching between windows easier
 map <C-h> <C-w>h
 map <C-j> <C-w>j
