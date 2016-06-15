@@ -54,7 +54,9 @@ set relativenumber
 set tabstop=4 softtabstop=0 shiftwidth=4 smarttab
 set autoindent smartindent
 
+" Use ; and , rather than : and \
 nnoremap ; :
+let mapleader=","
 
 " Use w!! for sudo save after opening
 cmap w!! w !sudo tee % >/dev/null
@@ -81,3 +83,7 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 let g:go_fmt_command = "goimports"
+
+au FileType go nmap <Leader>b <Plug>(go-build)
+au FileType go nmap <Leader>t <Plug>(go-test)
+au FileType go nmap <Leader>gd <Plug>(go-doc)
