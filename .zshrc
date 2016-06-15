@@ -24,7 +24,7 @@ alias sudo='sudo -E'
 typeset -U path
 
 export GOPATH=~/workspace/go
-path=($path $GOPATH/bin)
+path=($path /usr/bin $GOPATH/bin)
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
