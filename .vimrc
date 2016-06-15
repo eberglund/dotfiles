@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'fatih/vim-go'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'Shougo/neocomplete.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -56,6 +57,12 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_show_hidden = 1
 
+" Neocomplete Config
+let g:acp_enableAtStartup = 0
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+
 " Go-specific config
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -70,3 +77,4 @@ let g:go_fmt_command = "goimports"
 au FileType go nmap <Leader>b <Plug>(go-build)
 au FileType go nmap <Leader>t <Plug>(go-test)
 au FileType go nmap <Leader>gd <Plug>(go-doc)
+au FileType go nmap <Leader>r <Plug>(go-rename)
